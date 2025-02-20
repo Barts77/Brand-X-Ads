@@ -14,14 +14,25 @@
             text-align: center;
         }
         header {
-            background-color: #333;
-            padding: 1rem 0;
+            background: url('image.png') no-repeat center center/cover;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
         }
-        header img {
-            width: 150px;
+        .header-container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .logo {
+            width: 120px;
             height: auto;
-            display: block;
-            margin: 0 auto 10px;
+            margin-bottom: 10px;
         }
         nav {
             background-color: #444;
@@ -54,9 +65,11 @@
 <body>
 
 <header>
-    <img src="brandx_logo.png" alt="Brand X Logo">
-    <h1>BRAND X</h1>
-    <p>Kinakalaban ng Lahat Kaya Alam Mong Malakas</p>
+    <div class="header-container">
+        <img src="brandx_logo.png" alt="Brand X Logo" class="logo">
+        <h1>BRAND X</h1>
+        <p>Kinakalaban ng Lahat Kaya Alam Mong Malakas</p>
+    </div>
 </header>
 
 <nav>
